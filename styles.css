@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-size: 16px;
+    color: #196D94;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.loginSection {
+    display: flex;
+    height: 80%;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 25em;
+    height: 26em;
+    background-image: url(/teamup.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginForm {
+    width: 50%;
+    display: flex;
+}
+
+form {
+    margin: 0 auto;
+}
+
+label {
+    margin-left: 0.5em;
+}
+
+#email, #password, #submit {
+    border-radius: 15px;
+    padding: 1.0435em 0.7em;
+    width: 18.75em;
+    border: 2px solid #196D94;
+    margin-bottom: 0.4em;
+}
+
+input:hover {
+    background-color: #e2e2e2;
+}
+
+#submit {
+    margin-top: 1.2em;
+    background-color: white;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#google {
+    border-radius: 15px;
+    padding: 0.7em;
+    width: 300px;
+    border: 2px solid #196D94;
+    margin-bottom: 0.4em;
+    margin-top: 1.2em;
+}
+
+#facebook {
+    border-radius: 15px;
+    padding: 0.7em;
+    width: 300px;
+    border: 2px solid #196D94;
+    margin-bottom: 0.4em;
+    margin-top: 0.5em;
+}
+
+span {
+    margin: 0 auto;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .loginSection {
+        width: 90%;
+        height: 70%;
+        margin: 0 auto;
+    }
+    .loginForm {
+        width: auto;
+    }
+    .image {
+        background-image: none;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .image {
+        background-image: none;
+        display: none;
+    }
+    .loginForm {
+        width: auto;
+    }
+}
